@@ -43,43 +43,42 @@
       font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Helvetica Neue;
       background: var(--bg);
       color: var(--text);
-      line-height: 1.65;
+      line-height: 1.7;
     }
 
     a { color: var(--accent); text-decoration: none; }
 
-    /* Layout */
     .container {
-      max-width: 1100px;
+      max-width: 900px;
       margin: auto;
-      padding: 3rem 1.5rem 4rem;
+      padding: 4rem 1.5rem 5rem;
     }
 
+    /* Hero */
     .hero {
-      display: grid;
-      grid-template-columns: 1.3fr 0.7fr;
-      gap: 2.5rem;
-      align-items: center;
+      background: linear-gradient(180deg, rgba(56,189,248,0.08), transparent 60%);
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      padding: 2.8rem 2.5rem;
     }
 
-    /* Left panel */
-    .content-panel h1 {
+    .hero h1 {
       font-size: 2.6rem;
       margin: 0 0 0.5rem;
     }
 
-    .content-panel .role {
+    .hero .role {
       font-weight: 600;
-      margin-bottom: 1rem;
+      margin-bottom: 1.2rem;
     }
 
-    .content-panel p {
+    .hero p {
       color: var(--muted);
       margin-bottom: 1.2rem;
     }
 
     .tags {
-      margin-top: 1.2rem;
+      margin-top: 1.4rem;
     }
 
     .tag {
@@ -91,10 +90,8 @@
       font-size: 0.85rem;
     }
 
-
-    /* Sections */
     h2 {
-      margin-top: 3.5rem;
+      margin-top: 3.8rem;
       margin-bottom: 1rem;
       font-size: 1.5rem;
       border-bottom: 1px solid var(--border);
@@ -103,7 +100,7 @@
 
     .grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
       gap: 1.5rem;
     }
 
@@ -121,9 +118,8 @@
       margin-bottom: 0.6rem;
     }
 
-    /* CTA */
     .cta {
-      margin-top: 4rem;
+      margin-top: 4.5rem;
       text-align: center;
     }
 
@@ -131,7 +127,7 @@
       display: inline-block;
       background: var(--accent);
       color: #020617;
-      padding: 0.9rem 1.7rem;
+      padding: 0.9rem 1.8rem;
       border-radius: 10px;
       font-weight: 600;
     }
@@ -143,17 +139,9 @@
       font-size: 0.9rem;
     }
 
-    /* Responsive */
-    @media (max-width: 900px) {
-      .hero {
-        grid-template-columns: 1fr;
-      }
-      .image-panel {
-        order: -1;
-      }
-      .content-panel h1 {
-        font-size: 2.2rem;
-      }
+    @media (max-width: 700px) {
+      .hero h1 { font-size: 2.2rem; }
+      .hero { padding: 2.2rem 1.8rem; }
     }
   </style>
 </head>
@@ -164,33 +152,30 @@
 
     <!-- HERO -->
     <section class="hero">
+      <h1>Om Pandey</h1>
+      <div class="role">SEO Content Strategist | B2C & SaaS Content Writer</div>
 
-      <!-- CONTENT PANEL -->
-      <div class="content-panel">
-        <h1>Om Pandey</h1>
-        <div class="role">SEO Content Strategist | B2C & SaaS Content Writer</div>
-        <p>
-          I help digital-first brands grow organic traffic and conversions through SEO-driven content strategy, keyword research, SERP analysis, and on-page optimization.
-        </p>
-        <p>
-          I have worked on SEO content projects for B2C, service-based, and fintech brands including ClearTax, Groww, Acko, and StableMoney through agency and freelance collaborations. Currently, I work with Chiku Cab on high-intent, local SEO content.
-        </p>
+      <p>
+        I help digital-first brands grow organic traffic and conversions through SEO-driven content strategy, keyword research, SERP analysis, and on-page optimization.
+      </p>
 
-        <div class="tags">
-          <span class="tag">SEO Strategy</span>
-          <span class="tag">Keyword Research</span>
-          <span class="tag">SERP Analysis</span>
-          <span class="tag">On-Page SEO</span>
-          <span class="tag">B2C Content</span>
-          <span class="tag">SaaS-Style Writing</span>
-        </div>
+      <p>
+        I have worked on SEO content projects for B2C, service-based, and fintech brands including ClearTax, Groww, Acko, and StableMoney through agency and freelance collaborations. Currently, I work with Chiku Cab on high-intent, local SEO content.
+      </p>
 
-        <p style="margin-top:1.5rem;">
-          <a href="/">View Latest Blogs →</a>
-        </p>
+      <p>
+        👉 <a href="https://om-latest-blogs.vercel.app/" target="_blank" rel="noopener">View my latest blogs & published work</a>
+      </p>
+
+      <div class="tags">
+        <span class="tag">SEO Strategy</span>
+        <span class="tag">Keyword Research</span>
+        <span class="tag">SERP Analysis</span>
+        <span class="tag">On-Page SEO</span>
+        <span class="tag">B2C Content</span>
+        <span class="tag">SaaS-Style Writing</span>
       </div>
-
-  <br>
+    </section>
 
     <!-- EXPERIENCE -->
     <h2>Selected Work & Experience</h2>
